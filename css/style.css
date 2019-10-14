@@ -1,0 +1,212 @@
+/* HTML */
+html {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* END HTML */
+
+/* TEXT */
+.center {
+    text-align: center;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-orange {
+    color: orange;
+}
+/* END TEXT */
+
+/* CONTAINER */
+.no-margin {
+    margin: 0;
+}
+
+.no-padding {
+    padding: 0;
+}
+
+.card,
+.container {
+    padding: 2.3em;
+}
+
+.price-container {
+    padding: 0.3em;
+    border-radius: 40%;
+}
+
+.footer {
+    padding: 0.1em;
+}
+
+.card {
+    border-radius: 50px;
+}
+
+.round {
+    width: 14em;
+    height: 14em;
+    text-align: center;
+    border-radius: 50%;
+}
+/* END CONTAINER */
+
+/* GRID */
+* {
+    box-sizing: border-box;
+}
+
+.column-prices,
+.column-process,
+.column-title {
+    float: left;
+    padding: 20px;
+
+}
+
+.column-title {
+    width: 50%;
+}
+
+.column-process {
+    width: 20%;
+}
+
+.column-prices {
+    width: 33.3%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 1200px) {
+    .column-process {
+        width: 25%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .column-process {
+        width: 33.3%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .column-title {
+        width: 100%;
+    }
+
+    .column-prices,
+    .column-process {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .column-process {
+        width: 100%;
+    }
+    .column-prices {
+        width: 100%;
+    }
+}
+
+/* END GRID */
+
+/* BACKGROUND RELATED/ */
+.bg-level-1 {
+    background-color: #6973bf;
+}
+
+.bg-nav {
+    background-color: #333;
+}
+
+.bg-dark {
+    background-image: url("../img/darkabstract.jpg");
+}
+
+.bg-tech {
+    background-image: url("../img/tech.jpeg");
+}
+
+.bg-world {
+    background-image: url("../img/world.jpeg");
+}
+
+.bg-camo,
+.bg-dark,
+.bg-world {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* END BACKGROUND RELATED/ */
+
+/* PARALLAX */
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.parallax-normal {
+    min-height: 400px;
+}
+
+.parallax-small {
+    min-height: 200px;
+}
+/* END PARALLAX */
+
+/* NAVBAR */
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.topnav li {
+    float: left;
+}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {
+    background-color: #111;
+}
+
+ul.topnav li a.active {
+    background-color: #4CAF50;
+}
+
+ul.topnav li.right {
+    float: right;
+}
+
+@media screen and (max-width: 600px) {
+    ul.topnav li,
+    ul.topnav li.right {
+        float: none;
+    }
+}
+/* END NAVBAR */
