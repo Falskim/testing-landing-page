@@ -173,10 +173,14 @@ h1 {
 
 /* NAVBAR */
 ul.topnav {
+    position: fixed;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
+    width: 100%;
+    z-index: 100;
+    opacity: 0.9;
 }
 
 ul.topnav li {
